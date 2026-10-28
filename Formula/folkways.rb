@@ -5,21 +5,21 @@
 class Folkways < Formula
   desc "A way of working for teams that build with coding agents"
   homepage "https://github.com/sumsolution/folkways"
-  version "0.2.0"
+  version "0.3.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/sumsolution/folkways/releases/download/v0.2.0/folkways_0.2.0_darwin_amd64.tar.gz"
-      sha256 "28e6585b1519ce40a19c594de9852865b0d309e958631327d9778024f2ae304a"
+      url "https://github.com/sumsolution/folkways/releases/download/v0.3.0/folkways_0.3.0_darwin_amd64.tar.gz"
+      sha256 "312cb5a89124f9d08879290b5789668bf7ca044d4ed38712bc5e37f1e05a16cd"
 
       define_method(:install) do
         bin.install "folkways"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/sumsolution/folkways/releases/download/v0.2.0/folkways_0.2.0_darwin_arm64.tar.gz"
-      sha256 "6f7aa3183dfb19428e01f33c47f97a1ddefe93475514e87a4f5a27b9d3a4853e"
+      url "https://github.com/sumsolution/folkways/releases/download/v0.3.0/folkways_0.3.0_darwin_arm64.tar.gz"
+      sha256 "47bc7141a79853c78ebf56a449ca08be965033ff22602c1e968643a6293b9eab"
 
       define_method(:install) do
         bin.install "folkways"
@@ -29,15 +29,15 @@ class Folkways < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sumsolution/folkways/releases/download/v0.2.0/folkways_0.2.0_linux_amd64.tar.gz"
-      sha256 "2c4e51e2eb1c3f2a7a82f5ecc9ae6d82db28422ddd27e8450e608c3707646d88"
+      url "https://github.com/sumsolution/folkways/releases/download/v0.3.0/folkways_0.3.0_linux_amd64.tar.gz"
+      sha256 "1f0fd5f7b7d7625d6450fc150ec4155f5aa1f2174ff4d3a8d126ba8beb90a616"
       define_method(:install) do
         bin.install "folkways"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sumsolution/folkways/releases/download/v0.2.0/folkways_0.2.0_linux_arm64.tar.gz"
-      sha256 "a38bdcf1a3775c6c67ab00735c0828e558c72ae926ee8f2a54ac77fe40cbe604"
+      url "https://github.com/sumsolution/folkways/releases/download/v0.3.0/folkways_0.3.0_linux_arm64.tar.gz"
+      sha256 "b89a9556a87dc6211b84b2b407e2ae7d28ae913ec4acbeceb2fd5174e999b187"
       define_method(:install) do
         bin.install "folkways"
       end
